@@ -1,0 +1,11 @@
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+header {
+  background-color: #0C1446 ;
+  display: flex;
+  justify-content: center;
+}
