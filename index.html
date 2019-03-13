@@ -5,17 +5,21 @@
   <meta charset="utf-8">
   <title>Self Directed FD Starter</title>
 </head>
-<body>
-  <header class="background">
+<body id="background">
+  <nav class="nav">
     <p>Sweater Weather</p>
-    <div class="buttons">
+    <div class="singup-button">
       <a href="sign_up.html"><button class="singup-button">Sign up</button></a>
-      <a href="sign_in.html"><button class="singin-button">Sign in</button></a>    
     </div>
-  </header>
+    <div class="singin-button">
+      <a href="sign_in.html"><button class="singin-button">Sign in</button></a>
+    </div>
+  </nav>
   <section class="current-weather">
-    <input type="text" name="location">
-
+    <input type="text" name="location" id="location">
+    <button type="button" id="location-button">
+        Location
+    </button>
   </section>
   <section class="details">
     <h3>Details</h3>

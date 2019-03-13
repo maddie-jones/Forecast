@@ -2,9 +2,10 @@ body {
   background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #87ACA3;
+  font-family: "Arial", sans-serif;
 }
-header {
+nav {
   background-color: #0C1446 ;
   padding: 15px;
 }
@@ -12,8 +13,14 @@ header {
 p {
   display: flex;
   justify-content: flex-start;
+  font-size: 25px;
+  padding-left: 34px;
 }
-.buttons {
+.singup-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.singin-button {
   display: flex;
   justify-content: flex-end;
 }
