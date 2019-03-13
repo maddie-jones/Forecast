@@ -6,6 +6,14 @@ body {
 }
 header {
   background-color: #0C1446 ;
+  padding: 15px;
+}
+
+p {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
 }
