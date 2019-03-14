@@ -44,6 +44,25 @@ input[type=text] {
   display: flex;
   justify-content: center;
 }
+.currently {
+  border-color: red;
+}
+#favorite-button {
+  border: none;
+  padding: 12px 20px;
+  margin: 30px 0;
+  background-color: #175873;
+  font-size: 20px;
+  visibility: hidden;
+}
+#change-button {
+  border: none;
+  padding: 12px 20px;
+  margin: 30px 0;
+  background-color: #175873;
+  font-size: 20px;
+  visibility: hidden;
+}
 #location-button {
   border: none;
   padding: 12px 20px;
