@@ -46,6 +46,7 @@
 
 	"use strict";
 
+	// import * as signup from 'singup.js';
 	var location = document.getElementById("location");
 	var locationButton = document.getElementById("location-button");
 	var favoriteButton = document.getElementById("favorite-button");
@@ -151,8 +152,15 @@
 	  listFavorites(userLocation);
 	}
 
-	locationButton.addEventListener('click', weatherAtLocation);
-	favoriteButton.addEventListener('click', addFavorite);
+	var locations = locationButton; //.addEventListener('click', weatherAtLocation)
+
+	if (locations) {
+	  locationButton.addEventListener('click', weatherAtLocation);
+	}
+	var favorites = favoriteButton;
+	if (favorites) {
+	  favoriteButton.addEventListener('click', addFavorite);
+	}
 
 /***/ })
 /******/ ]);
