@@ -78,6 +78,10 @@ input[type=text] {
 .fa-cloud-moon {
   visibility: hidden;
 }
+#hourly-weather {
+  display: flex;
+  flex-wrap: wrap;
+}
 #favorite-button {
   border: none;
   padding: 12px 20px;
