@@ -2,12 +2,14 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="lib/styles.css">
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <meta charset="utf-8">
   <title>Self Directed FD Starter</title>
 </head>
 <body id="background">
   <nav class="nav">
-    <p>Sweater Weather</p>
+    <a href="index.html"><p>Sweater Weather</p></a>
     <div class="nav-button">
       <a href="sign_up.html"><button class="singup-button">Sign up</button></a>
       <a href="sign_in.html"><button class="singin-button">Sign in</button></a>
@@ -19,25 +21,53 @@
         Location
     </button>
   </section>
-  <section class="currently">
-    <p id="details"></p>
-    <p id="city"></p>
-    <p id="summary"></p>
-    <p id="temp"></p>
-    <div class="favorite-button">
-      <a><button id="favorite-button">Favorite</button></a>
-    </div>
-    <div class="change-button">
-      <a href="index.html"><button id="change-button">Change Location</button></a>
-    </div>
+  <div class="boxes">
+    <section class="currently">
+      <i class="fas fa-sun" id="sun"></i>
+      <i class="fas fa-moon" id="moon"></i>
+      <i class="fas fa-cloud-rain" id="cloud-rain"></i>
+      <i class="fas fa-snowflake" id="snowflake"></i>
+      <i class="fas fa-wind" id="wind"></i>
+      <i class="fas fa-cloud" id="cloud"></i>
+      <i class="fas fa-cloud-sun" id="cloud-sun"></i>
+      <i class="fas fa-cloud-moon" id="cloud-moon"></i>
+      <p id="city"></p>
+      <p id="time"></p>
+      <p id="summary"></p>
+      <p id="temp"></p>
+      <div class="favorite-button">
+        <a><button id="favorite-button">Favorite</button></a>
+      </div>
+      <div class="change-button">
+        <button id="change-button">Change Location</button>
+      </div>
+    </section>
+    <section class="forecast">
+        <p id="details"></p>
+        <p id="feels-like"></p>
+        <p id="humidity"></p>
+        <p id="visibility"></p>
+        <p id="uv-index"></p>
+    </section>
+  </div>
+  <section class="hourly">
+    <h3>Forecast</h3>
+    <header>
+      <div id="hourly-weather">
+
+      </div>
+    </header>
+    <section>
+      <div id="daily-weather">
+
+      </div>
+    </section>
+
   </section>
   <section>
     <div id="current-favorites">
       <p id="one-favorite"> </p>
     </div>
-  </section>
-  <section class="forecast">
-    <h3></h3>
   </section>
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
