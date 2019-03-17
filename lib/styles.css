@@ -44,8 +44,39 @@ input[type=text] {
   display: flex;
   justify-content: center;
 }
+.boxes {
+  display: flex;
+  flex-wrap: nowrap;
+}
 .currently {
-  border-color: red;
+  flex-grow: 1;
+}
+.forecast {
+  flex-grow: 1;
+}
+.fa-sun {
+  visibility: hidden;
+}
+.fa-moon {
+  visibility: hidden;
+}
+.fa-cloud-rain {
+  visibility: hidden;
+}
+.fa-snowflake {
+  visibility: hidden;
+}
+.fa-wind {
+  visibility: hidden;
+}
+.fa-cloud {
+  visibility: hidden;
+}
+.fa-cloud-sun {
+  visibility: hidden;
+}
+.fa-cloud-moon {
+  visibility: hidden;
 }
 #favorite-button {
   border: none;
