@@ -22,26 +22,30 @@
     </button>
   </section>
   <div class="boxes">
-    <section class="currently">
-      <i class="fas fa-sun" id="sun"></i>
-      <i class="fas fa-moon" id="moon"></i>
-      <i class="fas fa-cloud-rain" id="cloud-rain"></i>
-      <i class="fas fa-snowflake" id="snowflake"></i>
-      <i class="fas fa-wind" id="wind"></i>
-      <i class="fas fa-cloud" id="cloud"></i>
-      <i class="fas fa-cloud-sun" id="cloud-sun"></i>
-      <i class="fas fa-cloud-moon" id="cloud-moon"></i>
-      <p id="city"></p>
-      <p id="time"></p>
-      <p id="summary"></p>
-      <p id="temp"></p>
-      <div class="favorite-button">
-        <a><button id="favorite-button">Favorite</button></a>
-      </div>
-      <div class="change-button">
-        <button id="change-button">Change Location</button>
-      </div>
-    </section>
+    <div class="add-buttons">
+      <section class="currently">
+        <i class="fas fa-sun" id="sun"></i>
+        <i class="fas fa-moon" id="moon"></i>
+        <i class="fas fa-cloud-rain" id="cloud-rain"></i>
+        <i class="fas fa-snowflake" id="snowflake"></i>
+        <i class="fas fa-wind" id="wind"></i>
+        <i class="fas fa-cloud" id="cloud"></i>
+        <i class="fas fa-cloud-sun" id="cloud-sun"></i>
+        <i class="fas fa-cloud-moon" id="cloud-moon"></i>
+        <p id="city"></p>
+        <p id="time"></p>
+        <p id="summary"></p>
+        <p id="temp"></p>
+      </section>
+      <section class="favoritebuttons">
+        <div class="favorite-button">
+          <a><button id="favorite-button">Favorite</button></a>
+        </div>
+        <div class="change-button">
+          <button id="change-button">Change Location</button>
+        </div>
+      </section>
+    </div>
     <section class="forecast">
         <p id="details"></p>
         <p id="feels-like"></p>
@@ -51,7 +55,6 @@
     </section>
   </div>
   <section class="hourly">
-    <h3>Forecast</h3>
     <header>
       <div id="hourly-weather">
 
