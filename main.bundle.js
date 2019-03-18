@@ -212,7 +212,7 @@
 	  });
 	}
 
-	function renderFavorites(data) {
+	function renderFavorites(data, userLocation) {
 	  var attributes = data["data"];
 	  var _iteratorNormalCompletion3 = true;
 	  var _didIteratorError3 = false;
@@ -230,6 +230,7 @@
 	      var x = document.createTextNode("Delete");
 	      butt.appendChild(x);
 	      document.getElementById("current-favorites").appendChild(butt);
+	      butt.addEventListener('click', deleteFavorite(value["attributes"]["location"]));
 	    }
 	  } catch (err) {
 	    _didIteratorError3 = true;
@@ -248,10 +249,11 @@
 	}
 
 	function listFavorites(location) {
+	  var userLocation = location;
 	  fetch("https://sweater-weather-mine.herokuapp.com/api/v1/favorites?api_key=7ca3f5426c369b8763a73fc0c4").then(function (response) {
 	    return response.json();
 	  }).then(function (data) {
-	    return renderFavorites(data);
+	    return renderFavorites(data, userLocation);
 	  }).catch(function (error) {
 	    return console.error({ error: error });
 	  });
@@ -268,6 +270,7 @@
 	function removeFavorite() {
 	  var userLocation = location.value;
 	  listFavorites(userLocation);
+	  console.log("hurray");
 	}
 
 	function addFavorite() {
@@ -276,7 +279,7 @@
 	}
 
 	function deleteFavorite(location) {
-	  fetch("https://sweater-weather-mine.herokuapp.com/api/v1/favorites?location=" + location + "&api_key=7ca3f5426c369b8763a73fc0c4", {
+	  fetch("https://sweater-weather-mine.herokuapp.com/api/v1/favorites?location=" + location + "&api_key=00d53e824667f43b4d2a88c268", {
 	    method: 'delete',
 	    headers: {
 	      'Content-Type': 'application/json'
